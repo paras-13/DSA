@@ -28,7 +28,7 @@ void insertNode(Node* &head, int value)
 
 int length(Node* head)
 {
-    int count;
+    int count=0;
     while(head!=NULL)
     {
         count++;
