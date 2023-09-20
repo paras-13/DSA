@@ -75,8 +75,17 @@ int method1(Node* head)     // Method 1:- Time-Comp O[n]
 
 int method2(Node* head)     // Method 2: Time Complexity O[n]
 {
-    
-    return 12;
+    Node* slow = head;
+    Node* fast = head;
+    if(head!=NULL)
+    {
+        while(fast!=NULL && fast->next!=NULL)
+        {
+            fast=fast->next->next;   // We have to move to move fast pointer with 2x speed;
+            slow=slow->next;
+        }
+    }
+    return slow->data;
 }
 
 void print_LL(Node* head)
