@@ -1,4 +1,6 @@
 // Deleting a Node in Singly Linked List
+// The element can be deleted by providing either its position or directly the element
+//  --> This code comprise of both the options...
 #include<iostream>
 using namespace std;
 
