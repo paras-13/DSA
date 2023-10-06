@@ -5,7 +5,10 @@ A stack is a list of homogenous elements, wherein the addition and deletion of e
 --> The top element of the stack is the last element added to the stack.
 --> As elements are added and removed from one end(that is top), it follows that the item 
     that is added last will be removed first.
---> This order is known as LIFO [Last In First Out]
+--> This order is known as LIFO [Last In First Out] or FILO [First in Last Out].
 
 STACK:- A data Structure int which the elements are addded and removed from one end only; a last in first out Data Structure[LIFO].
 
+-> Register Stack:- This type of stack is also a memory element present in the memory unit and can handle a small amount of data only.
+                    The height of the register stack is always limited as the size of the register stack is very small compared to the memory.
+-> Memory Stack :- This type of stack can handle a large amount of memory data. The height of the memory stack is flexible as it occupies a large amount of memory data. 
