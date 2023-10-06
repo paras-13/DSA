@@ -12,3 +12,14 @@ STACK:- A data Structure int which the elements are addded and removed from one 
 -> Register Stack:- This type of stack is also a memory element present in the memory unit and can handle a small amount of data only.
                     The height of the register stack is always limited as the size of the register stack is very small compared to the memory.
 -> Memory Stack :- This type of stack can handle a large amount of memory data. The height of the memory stack is flexible as it occupies a large amount of memory data. 
+
+# Application of Stack in real life:
+
+->  CD/DVD stand.
+->  Stack of books in a book shop.
+->  Call center systems.
+->  Undo and Redo mechanism in text editors.
+->  The history of a web browser is stored in the form of a stack.
+->  Call logs, E-mails, and Google photos in any gallery are also stored in form of a stack.
+->  YouTube downloads and Notifications are also shown in LIFO format(the latest appears first ).
+->  Allocation of memory by an operating system while executing a process.
