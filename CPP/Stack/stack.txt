@@ -1,0 +1,11 @@
+STACK Data Structure:- 
+
+A stack is a list of homogenous elements, wherein the addition and deletion of elements occurs only at one end, called the TOP.
+--> The elements at bottom of the stack have been in the stack the longest.
+--> The top element of the stack is the last element added to the stack.
+--> As elements are added and removed from one end(that is top), it follows that the item 
+    that is added last will be removed first.
+--> This order is known as LIFO [Last In First Out]
+
+STACK:- A data Structure int which the elements are addded and removed from one end only; a last in first out Data Structure[LIFO].
+
