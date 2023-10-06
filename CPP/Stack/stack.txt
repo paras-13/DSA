@@ -23,3 +23,10 @@ STACK:- A data Structure int which the elements are addded and removed from one 
 ->  Call logs, E-mails, and Google photos in any gallery are also stored in form of a stack.
 ->  YouTube downloads and Notifications are also shown in LIFO format(the latest appears first ).
 ->  Allocation of memory by an operating system while executing a process.
+
+** Stack operations:- 
+1. push = Adds a new element at the top of a stack, the stack must exist and must not be full.
+2. top = Returns the top element of the stack, the stack must exist and must not be empty.
+3. pop = Removes the top element of stack, the stack must exist and must not be empty.
+4. isFullStack = Checks whether the stack is full.
+5. is EmptyStack = Checks whether the stack is empty or not.
