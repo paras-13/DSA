@@ -92,8 +92,8 @@ int main()
 {
     class Stack mystack;
     int ch, val, flag=1;
-    cout << "Enter you choice: ";
     cout << "1. Push\n2. Pop\n3. Top\n4. isEmpty\n5. isFull\n6. Size\n7. Display\n8. Exit\n";
+    cout << "Enter you choice: ";
     while(flag)
     {
         cin >> ch;
