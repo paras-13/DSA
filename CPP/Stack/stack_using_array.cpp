@@ -19,10 +19,22 @@ class Stack
 {
 private:
     int top;
-    int arr[MAX];
+    int *arr;
+    int MAX_SIZE;
 
-public:
-    Stack() { top = -1; }
+    public:
+    Stack()
+    {
+        MAX_SIZE = 100;
+        arr = new int(MAX_SIZE);
+        top = -1;
+    }
+    Stack(int x)
+    {
+        MAX_SIZE = x;
+        arr = new int(MAX_SIZE);
+        top = -1;
+    }
     bool isEmptyStack();
     bool isFullStack();
     void Push(int element);
