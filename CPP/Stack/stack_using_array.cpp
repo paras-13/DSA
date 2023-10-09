@@ -26,13 +26,13 @@ private:
     Stack()
     {
         MAX_SIZE = 100;
-        arr = new int(MAX_SIZE);
+        arr = new int[MAX_SIZE];
         top = -1;
     }
     Stack(int x)
     {
         MAX_SIZE = x;
-        arr = new int(MAX_SIZE);
+        arr = new int[MAX_SIZE];
         top = -1;
     }
     bool isEmptyStack();
