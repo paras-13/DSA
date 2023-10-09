@@ -1,1 +1,67 @@
-About Queue
+
+------------------------------------ QUEUE Data Structure --------------------------------------
+
+ -> A QUEUE is defined as a linear data structure that is open at both ends 
+    and the operations are performed in First In First Out (FIFO) order.
+
+   -> It is a set of elements of the same type in which the elements are added at one end, called the back or rear.
+      and deleted from the other end, called the front or first.
+      -> Rear is accessed whenever a new element is added to the queue.
+      -> Front is accessed whenever an element is deleted from the queue.
+   
+QUEUE: A Data Structure in which the elements are added at one end, called the rear, and deleted
+       from the other end, called the front or first, It is a FIFO[ First In First Out ] Data Structure.
+
+--------- Primary Queue Operations --------- 
+# enqueue = An element is inserted in the queue at the end (at the rear end);
+# dequeue = Element is removed from the front and returned.
+
+** SOME other queue operations: 
+1) front: Return the element at the front without removing.
+2) rear(): Return the element at the rear without removing.
+3) isEmpty(): Return whether the queue is empty or not.
+4) size(): Return the size of the queue (total number of elements in the queue)
+
+
+**Types Of QUEUE:-
+--> Simple QUEUE: Also known as a linear queue. Simple enqueue and dequeue operations takes place.
+
+--> Circular QUEUE: The element of the queue act as a circular ring.
+                    Working of a circular queue is similar to the linear queue.
+                    But the last element is connected to the first element.
+
+--> Priority QUEUE: This arranges the elements in a queue based on some priority.
+                    The priority can be such that it create a queue with decreasing order of values.
+                    The priority can also be such that it can create a queue with increasing order of values.
+               
+--> Dequeue: Also known as Double Ended Queue.
+             Double ended means that an element can be inserted or removed from both the ends of the queue.
+             Because of this property it may not obey the First In First Out property. 
+
+
+**Applications of Queue:
+-> Multi programming: Multiple programs are organized as queues. 
+-> Network: Queue is used in devices such as a router or a switch.
+-> Job Scheduling: Jobs are organized in form of Queue.
+-> Shared resources: Queues are used as waiting lists for a single shared resource.
+
+**Real-time application of Queue:
+-> ATM Booth Line
+-> Ticket Counter Line
+-> Key press sequence on the keyboard
+-> CPU task scheduling
+-> Waiting time of customers at call centers.
+
+## Advantages of Queue:
+-> A large amount of data can be managed efficiently with ease.
+-> Insertion and deletion operation are easy as it follows the FIFO order.
+-> Queues are useful when a particular service is used by multiple consumers.
+-> Queues are fast in speed for data inter-process communication.
+-> Queues can be used in the implementation of other data structures.
+
+## Disadvantages of Queue:
+-> Insertion and deletion of elements from the middle are time consuming.
+-> Limited Space.
+-> In a classical queue, a new element can only be inserted when the existing elements are deleted from the queue.
+-> Searching an element takes O(N) time.
+
