@@ -7,7 +7,7 @@ int josephus(int n, int k)
     if (n == 0)
         return 0;
     int x = josephus(n - 1, k);
-    int y = (x + k) % n;
+    int y = (x + k-1) % n+1;
     return y;
 }
 int main()
