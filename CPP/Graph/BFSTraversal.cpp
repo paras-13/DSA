@@ -16,7 +16,7 @@ class Graph{
     public:
     Graph(int x) {
         this->v = x;
-        adjList.resize(V);
+        adjList.resize(v);
     }
     void addEdges(int u, int v) {
         adjList[u].push_back(v);
