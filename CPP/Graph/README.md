@@ -8,10 +8,10 @@ Graph is a non-linear data structure consisting of vertices and edges.
 
 
 ## Representing Graphs
-Following two are the most commonly used representations of a graph:
-[1. Adjacency Matrix Representation](https://github.com/paras-13/DSA/blob/main/CPP/Graph/adjacency_matrix.cpp)
+Following two are the most commonly used representations of a graph:<br>
+[1. Adjacency Matrix Representation](https://github.com/paras-13/DSA/blob/main/CPP/Graph/adjacency_matrix.cpp)<br>
 [2. Adjacency List Representation](https://github.com/paras-13/DSA/blob/main/CPP/Graph/adjacencyList.cpp)
 
 ## Graph Traversal
-[1. BFS Traversal](https://github.com/paras-13/DSA/blob/main/CPP/Graph/BFSTraversal.cpp)
+[1. BFS Traversal](https://github.com/paras-13/DSA/blob/main/CPP/Graph/BFSTraversal.cpp)<br>
 [2. DFS Traversal](https://github.com/paras-13/DSA/blob/main/CPP/Graph/DFSTraversal.cpp)
