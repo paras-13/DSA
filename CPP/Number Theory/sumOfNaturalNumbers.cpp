@@ -7,7 +7,7 @@ using namespace std;
 /*
     *Here multiplying by 1LL help to
     *perform calculations in long long,
-	*so that answer should not be overflowed
+    *so that answer should not be overflowed
 */
 int findSum(int n) {
     if(n%2 == 0) 
