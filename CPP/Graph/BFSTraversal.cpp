@@ -10,13 +10,13 @@ adjacent to the initially given vertex and pushes them all to a queue in order o
 using namespace std;
 class Graph{
     private:
-    vector<int>adjList[10];
+    vector<vector<int>>adjList;
     int v;
 
     public:
     Graph(int x) {
         this->v = x;
-        adjList[v];
+        adjList.resize(V);
     }
     void addEdges(int u, int v) {
         adjList[u].push_back(v);
