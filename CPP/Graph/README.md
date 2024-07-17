@@ -14,4 +14,6 @@ Following two are the most commonly used representations of a graph:<br>
 
 ## Graph Traversal
 [1. BFS Traversal](https://github.com/paras-13/DSA/blob/main/CPP/Graph/BFSTraversal.cpp)<br>
-[2. DFS Traversal](https://github.com/paras-13/DSA/blob/main/CPP/Graph/DFSTraversal.cpp)
+[2. DFS Traversal](https://github.com/paras-13/DSA/blob/main/CPP/Graph/DFSTraversal.cpp)<br>
+[3. BFS Disconnected Graph](https://github.com/paras-13/DSA/blob/main/CPP/Graph/BFSDisconnectedGraph.cpp)<br>
+[4. DFS Disconnected Graph](https://github.com/paras-13/DSA/blob/main/CPP/Graph/DFSDisconnectedGraph.cpp)
