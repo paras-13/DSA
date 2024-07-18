@@ -30,7 +30,6 @@ bool Graph :: DFS(vector<bool>&visited, int s, int parent) {
     visited[s] = true;
     for(auto it : adjList[s]){
         if(!visited[it]) {
-            visited[it] = true;
             if(DFS(visited, it, s))
                 return true;
         }
