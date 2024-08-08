@@ -17,3 +17,8 @@ Following two are the most commonly used representations of a graph:<br>
 [2. DFS Traversal](https://github.com/paras-13/DSA/blob/main/CPP/Graph/DFSTraversal.cpp)<br>
 [3. BFS Disconnected Graph](https://github.com/paras-13/DSA/blob/main/CPP/Graph/BFSDisconnectedGraph.cpp)<br>
 [4. DFS Disconnected Graph](https://github.com/paras-13/DSA/blob/main/CPP/Graph/DFSDisconnectedGraph.cpp)
+
+
+## TopoLogical Sorting
+[1. Topo Sort DFS](https://github.com/paras-13/DSA/blob/main/CPP/Graph/Topological_Sorting_Using_DFS.cpp)<br>
+[2. Topo Sort BFS](https://github.com/paras-13/DSA/blob/main/CPP/Graph/Topological_Sorting_KahnsAlgorithm_BFS.cpp)
