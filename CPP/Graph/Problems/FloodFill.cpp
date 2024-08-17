@@ -49,7 +49,8 @@ int main() {
     cin >> sr >> sc;
     cout << "Original image: " << endl;
     print(image, n, m);
-    floodFill(image, n, m, sr, sc, dx, dy, image[sr][sc], newColor);
+    if(image[sr][sc] != newColor)
+        floodFill(image, n, m, sr, sc, dx, dy, image[sr][sc], newColor);
     cout << "Image after color change: " << endl;
     print(image, n, m);
 }
