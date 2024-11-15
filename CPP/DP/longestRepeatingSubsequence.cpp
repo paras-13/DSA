@@ -23,6 +23,6 @@ int main() {
     cin >> s;
     int n = s.length();
     vector<vector<int>>dp(n+1, vector<int>(n+1, 0));
-    cout << "Length of Longest Repeating Subsequence " << LRS(s, n, dp);
-    return 0;
+    int result = LRS(s, n, dp);
+    cout << "Length of Longest Repeating Subsequence: " << result << endl;
 }
