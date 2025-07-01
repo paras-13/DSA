@@ -1,89 +1,108 @@
 #include <iostream>
+#include <vector>
 #include <queue>
 using namespace std;
-class TreeNode {
-    public:
-    int data;
-    TreeNode* right;
-    TreeNode* left;
-    TreeNode(int val) {
-        data = val;
-        right = left = NULL;
+class TreeNode
+{
+public:
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int val)
+    {
+        this->val = val;
+        left = right = NULL;
     }
 };
-
-TreeNode* insertNode(TreeNode* root, int val) {
-    if(root == NULL)
-    {
-       root = new TreeNode(val);
-       return root;
-    }
-    if(root->data > val) 
-        root->left = insertNode(root->left, val);
-    if(root->data < val)
-        root->right = insertNode(root->right, val);
+TreeNode *insertNodeInBST(TreeNode *root, int value)
+{
+    if (!root)
+        return new TreeNode(value);
+    if (root->val < value)
+        root->right = insertNodeInBST(root->right, value);
+    else
+        root->left = insertNodeInBST(root->left, value);
     return root;
 }
 
-TreeNode* deleteNode(TreeNode* root, key) {
-    if(root == NULL) return root;
-    if(root->data > val) {
-        root->left = deleteNode(root->left, key);
-        return root;
-    }
-    if(root->data < val {
-        root->right = deleteNode(root->right, key);
-        return root;
-    }
-    if(root->left == NULL) {
-        TreeNode* temp = root->right;
-        delete root;
-        return temp;
-    }
-    else if(root->right == NULL) {
-        TreeNode* temp = root->left;
-        delete root;
-        return temp;
-    }
-    else {
-        
-    }
+TreeNode *getSuccessor(TreeNode *root)
+{
+    TreeNode *succ = root->right;
+    while (succ && succ->left)
+        succ = succ->left;
+    return succ;
 }
-void levelOrder(TreeNode* root) {
-    if(root == NULL) return;
-    queue <TreeNode* >q;
+TreeNode *deleteNodeInBST(TreeNode *root, int k)
+{
+    // base case
+    if (!root)
+        return root;
+    if (root->val > k)
+        root->left = deleteNodeInBST(root->left, k);
+    else if (root->val < k)
+        root->right = deleteNodeInBST(root->right, k);
+    else
+    {
+        // if left sbtree is empty
+        if (!root->left)
+        {
+            TreeNode *temp = root->right;
+            delete root;
+            return temp;
+        }
+        // Similarly if for a node right substree is empty
+        if (!root->right)
+        {
+            TreeNode *temp = root->left;
+            delete root;
+            return temp;
+        }
+
+        // Main case where we have both children for a node
+        TreeNode *succ = getSuccessor(root);
+        root->val = succ->val;
+        root->right = deleteNodeInBST(root->right, succ->val);
+    }
+    return root;
+}
+void levelOrderTraversal(TreeNode *root)
+{
+    queue<TreeNode *> q;
     q.push(root);
-    q.push(NULL);
-    while(!q.empty()) {
-        TreeNode* temp = q.front();
-        q.pop();
-        if(temp == NULL) {
-            cout << endl;
-            if(!q.empty()) q.push(NULL);
+    while (!q.empty())
+    {
+        int s = q.size();
+        for (int i = 0; i < s; i++)
+        {
+            TreeNode *node = q.front();
+            q.pop();
+            cout << node->val << " ";
+            if (node->left)
+                q.push(node->left);
+            if (node->right)
+                q.push(node->right);
         }
-        if(temp) {
-            cout << temp -> data << " ";
-            if(temp->left) q.push(temp->left);
-            if(temp->right) q.push(temp->right);
-        }
+        cout << endl;
     }
 }
-void inorder(TreeNode* root) {
-    if(root == NULL) return;
-    inorder(root->left);
-    cout << root->data << " ";
-    inorder(root->right);
-}
-int main() {
-    TreeNode* root = NULL;
-    int n;
-    cout << "Enter number of elements: ";
+int main()
+{
+    int n, val, k;
+    cout << "Enter number of element to enter: ";
     cin >> n;
-    int val;
-    for(int i=0; i<n; i++) {
+    cout << "Enter elements: ";
+    TreeNode *root = NULL;
+    for (int i = 0; i < n; i++)
+    {
         cin >> val;
-        root = insertNode(root, val);
+        root = insertNodeInBST(root, val);
     }
-    inorder(root);
-    levelOrder(root);
+    cout << "Level Order Traversal Before Deletion: " << endl;
+    levelOrderTraversal(root);
+    cout << "Element value to delete: ";
+    cin >> k;
+    root = deleteNodeInBST(root, k);
+    cout << "Level Order Traversal After Deletion: " << endl;
+    levelOrderTraversal(root);
+    return 0;
 }
