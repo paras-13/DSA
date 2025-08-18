@@ -5,7 +5,7 @@
     * (x & 1) => 1 means odd, 0 means even
 
 ! Check for power of two
-    * (x & (x-1));  => 0 means yes, 1 means no
+    * (x & (x-1));  => 0 means yes
 
 ! Check right most set bit
     * (x & -x);
